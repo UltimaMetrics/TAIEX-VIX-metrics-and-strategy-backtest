@@ -74,7 +74,7 @@ volatility
 
 
 
-# Check for cointegration
+# Check for unit root process
 def stationarity(data, cutoff=0.05):
     if adfuller(data)[1] < cutoff:
         print('The series is stationary')
